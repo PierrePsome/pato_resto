@@ -1,0 +1,67 @@
+.white-box2 {
+    background-color:white; 
+    height: 615px;
+    display: grid;
+    align-items: center;
+
+    .cards-cont {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .learn-cards {
+        .img-of-cards {
+            width: 100%;
+            height: 220px;
+            border-radius: 12px;
+            transition: .5s all;
+            overflow: hidden;
+        }
+
+        h4 {
+            margin-bottom: 0px;
+        }
+
+        p {
+            margin: 30px 0px 30px 0px;
+        }
+
+        a {
+            font-size: 12px;
+        }
+
+        .one {
+            background: url(../../img/intro-01.jpg) center/cover;
+            width: 100%;
+            height: 100%;
+            transition: .5s;
+        }
+
+        .one:hover {
+            transform: scale(120%);
+        }
+
+        .two {
+            background: url(../../img/intro-02.jpg) center/cover;
+            width: 100%;
+            height: 100%;
+            transition: .5s;
+        }
+
+        .two:hover {
+            transform: scale(120%);
+        }
+
+        .three {
+            background: url(../../img/intro-03.jpg) center/cover;
+            width: 100%;
+            height: 100%;
+            transition: .5s;
+        }
+
+        .three:hover {
+            transform: scale(120%);
+        }
+    }
+}
