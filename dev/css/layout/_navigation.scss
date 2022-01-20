@@ -1,14 +1,39 @@
 nav {
+    position: fixed;
     width: 100vw;
     background-color: white;
-    padding: 20px 0px 20px 0px;
+    padding: 0px 0px 20px 0px;
+    opacity: 0.9;
+    z-index: 2;
     
     .nav-cont {
         display: flex;
         align-items: center;
+        justify-content: space-around;
     }
 
     a {
         margin: 0px 20px 0px 20px;
+    }
+
+    .social-nav {
+        .fb {
+            margin: 0px 15px 0px 15px;
+        }
+    }
+
+    .burger-menu {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        div {
+            width: 80%;
+            background-color: black;
+            height: 2px;
+            border-radius: 15px;
+        }
     }
 }
