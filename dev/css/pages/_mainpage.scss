@@ -208,3 +208,54 @@
     }
 
 }
+
+
+// EVENTS
+
+.events {
+    height: 85vh;
+    background:url(../../img/bg-event-01.jpg) center/cover;
+
+    .discover {
+        height: 35%;   
+        color: white;
+        display: grid;
+        align-items: center;
+
+
+        div {
+            text-align: center;
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 50px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            word-spacing: 8px;
+        }
+
+        h3 {
+            font-size: 30px;
+        color: #d61c22;
+        }
+    }
+
+    .cont-wines {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        height: 350px;
+        border-radius: 12px;
+        overflow: hidden;
+        text-align: center;
+
+        .img-wines {
+            background: url(../../img/bg-event-01.jpg);
+        }
+
+        .wines {
+            background: white;
+        }
+    }
+}
