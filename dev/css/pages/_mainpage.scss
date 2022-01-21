@@ -29,6 +29,11 @@
 
         a {
             font-size: 12px;
+            transition: .3s;
+        }
+
+        a:hover {
+            color: #EC1D25;
         }
 
         .one {
@@ -39,7 +44,7 @@
         }
 
         .one:hover {
-            transform: scale(120%);
+            transform: scale(110%);
         }
 
         .two {
@@ -50,7 +55,7 @@
         }
 
         .two:hover {
-            transform: scale(120%);
+            transform: scale(110%);
         }
 
         .three {
@@ -61,7 +66,145 @@
         }
 
         .three:hover {
-            transform: scale(120%);
+            transform: scale(110%);
         }
     }
+
+}
+
+.discover-menu {
+    background-color: #F4F2E9;
+
+    .discover {
+        padding-top: 100px;
+        padding-bottom: 50px;
+        text-align: center;
+
+
+        .discover-cont {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h3 {
+            font-size: 30px;
+            color: #d61c22;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: white;
+            font-size: 50px;
+            line-height: 1.2;
+            color: #222222;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            word-spacing: 8px;
+        }
+    }
+
+
+    .menu-cards {
+        height: 80vh;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas:
+        "big oui ."
+        "big oui ."
+        "true true .";
+        gap: 2rem;
+        margin-bottom: 100px;
+
+        .m-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+
+            a {
+                position: absolute;
+                top: 50%;
+                padding: 10px 20px 10px 20px;
+                background-color: white;
+                transform: translate(-50%,-50%);
+                border-radius: 7px;
+                font-size: 24px;
+                opacity: .9;
+                transition: .5s;
+            }
+
+            a:hover {
+                background-color: #d61c22;
+                color: black;
+            }
+
+            .chiant {
+                height: 100%;
+                div {
+                    height: 100%;
+                    transition: .5s;
+                }
+            }
+            
+        }
+
+        .m-card:nth-of-type(1) {
+            grid-area: big;
+
+            .chiant {
+                div {
+                    background: url(../../img/our-menu-01.jpg) center/cover;
+                }
+            }
+        }
+
+        .m-card:nth-of-type(2) {
+            grid-area: oui;
+            overflow: hidden;
+
+            .chiant {
+                div {
+                    background: url(../../img/our-menu-05.jpg) center/cover;
+                }
+            }
+        }
+
+        .m-card:nth-of-type(3) {
+            .chiant {
+                div {
+                    background: url(../../img/our-menu-08.jpg) center/cover;
+                }
+            }
+        }
+
+        .m-card:nth-of-type(4) {
+            .chiant {
+                div {
+                    background: url(../../img/our-menu-10.jpg) center/cover;
+                }
+            }
+        }
+
+        .m-card:nth-of-type(5) {
+            grid-area: true;
+            .chiant {
+                div {
+                    background: url(../../img/our-menu-13.jpg) center/cover;
+                }
+            }
+        }
+
+        .m-card:nth-of-type(6) {
+            .chiant {
+                div {
+                    background: url(../../img/our-menu-16.jpg) center/cover;
+                }
+            }
+        }
+
+        .treschiant:hover {
+            transform: scale(110%);
+        }
+    }
+
 }
