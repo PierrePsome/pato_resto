@@ -1,0 +1,83 @@
+.over {
+    position: fixed;
+    background-color: black;
+    opacity: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 3;
+    transition: .5s;
+}
+
+.menu {
+
+    .canvas {
+        position: fixed;
+        width: 20%;
+        height: 100vh;
+        background-color: white;
+        right: 0;
+        z-index: 4;
+        transform: translate(100%);
+        transition: .5s;
+
+        .cross {
+            position: relative;
+            top: 30px;
+            width: 100%;
+            height: 50px;
+            display: grid;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        .cross span {
+            position: absolute;
+            height: 1px;
+            width: 30px;
+            background-color: black;
+            margin-right: 30px;
+            justify-self: end;
+        }
+        
+        .cross span:nth-of-type(1) {
+            transform: rotate(-45deg);
+        }
+        
+        .cross span:nth-of-type(2) {
+            transform: rotate(45deg);
+        }
+    }
+
+    .menu-sidebar {
+        margin: 50px 0px 50px 0px;
+        display: grid;
+        grid-template-rows: repeat(1,1fr);
+
+        a {
+            margin-top: 20px;
+            justify-self: center;
+            transition: .3s;
+        }
+
+        a:hover {
+            color: #EC1D25;
+        }
+    }
+
+    .reservation-btn {
+        width: 100%;
+        text-align: center;
+
+        a {
+            background-color: black;
+            color: white;
+            padding: 10px 20px 10px 20px;
+            border-radius: 12px;
+            transition: .3s;
+        }
+
+        a:hover {
+            background-color: #EC1D25;
+        }
+    }
+}
