@@ -1,0 +1,25 @@
+footer {
+    background-color: #222222;
+    height: 800px;
+
+    .cont-footer {
+        display: grid;
+        grid-template-areas: 
+        "none ok yes"
+        "none ok yes"
+        ;
+        height: 600px;
+        gap: 3rem;
+        div {
+            background-color: white;
+        }
+
+        .f-double-block {
+            grid-area: yes;
+        }
+
+        .f-double-block2 {
+            grid-area: ok;
+        }
+    }
+}
