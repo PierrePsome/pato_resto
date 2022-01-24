@@ -5,6 +5,11 @@ body { background-color: rgba(0, 0, 0, 0.767);}
     margin: 0 auto;
 }
 
+.bande {
+    background-color: white;
+    height: 70vh;
+}
+
 
 h3 {
     font-family: 'Courgette', cursive;
@@ -34,7 +39,16 @@ p {
     margin: 0px;
 }
 
-a, p {
+span {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0px;
+}
+
+a, p, label, input, select {
     font-family: Montserrat;
 }
 
@@ -49,4 +63,31 @@ a {
     color: #EC1D25;
     border-radius: 15px;
     padding: 10px 20px 10px 20px;
+}
+
+.titrestxt {
+
+
+    div {
+        text-align: center;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 50px;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        word-spacing: 8px;
+    }
+
+    h3 {
+        font-size: 30px;
+    color: #d61c22;
+    }
+}
+
+.duo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
