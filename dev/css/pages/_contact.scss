@@ -1,0 +1,125 @@
+.c-home {
+    height: 70vh;
+    background: url(../../img/bg-title-page-02.jpg) center/cover;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        color: white;
+        font-size: 60px;
+        letter-spacing: 5px;
+    }
+}
+
+.g-map {
+    background-color: #F3F0F0;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    #map {
+        width: 1200px;
+        height: 500px;
+        margin: 0 auto;
+        border: solid 8px white;
+        border-radius: 12px;
+    }
+
+    .message {
+        display: grid;
+        justify-content: center;
+        margin-bottom: 100px;
+
+        h2 {
+            text-align: center;
+            margin-bottom: 80px;
+            margin-top: 150px;
+            font-weight: 300;
+            letter-spacing: 5px;
+        }
+
+        .c-form {
+            display: grid;
+            grid-template-areas:
+            "no no no"
+            "yes yes yes"
+            "input input input"
+            ;
+            gap: 2rem;
+            justify-content: center;
+
+            .f-block {
+                display: grid;
+                grid-template-rows: repeat(1, 1fr);
+                gap: 1rem;
+    
+                input, select, textarea {
+                    border: 2px solid rgba(128, 128, 128, 0.253);
+                    border-radius: 12px;
+                    height: 3em;
+                    padding: 12px;
+                }
+    
+                input:focus, select:focus, textarea:focus {
+                    border: 2px solid #d61c22;
+                }
+            }
+
+            .f-block-whole {
+                display: grid;
+                grid-area: yes;
+                gap: 1rem;
+    
+                input, select, textarea {
+                    border: 2px solid rgba(128, 128, 128, 0.253);
+                    border-radius: 12px;
+                    height: 3em;
+                    padding: 12px;
+                }
+
+                textarea {
+                    resize: vertical;
+                    font-family: Montserrat;
+                    height: 20em;
+                }
+    
+                input:focus, select:focus, textarea:focus {
+                    border: 2px solid #d61c22;
+                }
+            }
+    
+            .c-submit {
+                display: grid;
+                grid-area: input;
+                justify-self: center;
+                background-color: rgba(0, 0, 0, 0.863);
+                color: white;
+                padding: 10px 20px 10px 20px;
+                border-radius: 12px;
+                border: none;
+                width: 150px;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+.c-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .cont-info {
+        justify-self: center;
+        display: flex;
+
+        i {
+            margin-right: 30px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+    }
+}
