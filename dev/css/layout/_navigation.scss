@@ -10,6 +10,13 @@ nav {
         display: flex;
         align-items: center;
         justify-content: space-around;
+
+        .nav-droite {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 2em;
+        }
     }
 
     a {
@@ -57,3 +64,27 @@ nav {
         background-color: #EC1D25;
     }
 }
+
+
+@media screen and (max-width: 950px) {
+
+    nav {
+        position: fixed;
+        width: 100vw;
+        background-color: white;
+        padding: 0px 0px 20px 0px;
+        opacity: 0.9;
+        z-index: 2;
+        
+        .nav-cont {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .menu-nav {
+                display: none;
+            }
+        }
+    }
+  }

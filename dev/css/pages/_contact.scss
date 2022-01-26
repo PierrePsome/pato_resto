@@ -123,3 +123,27 @@
         }
     }
 }
+
+@media screen and (max-width: 750px) {
+
+    .c-info {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    
+        .cont-info {
+            justify-self: center;
+            display: flex;
+            padding: 30px 0px 30px 0px;
+    
+            i {
+                margin-right: 30px;
+            }
+    
+            h2 {
+                margin-bottom: 20px;
+                font-weight: 300;
+            }
+        }
+    }
+
+  }

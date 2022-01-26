@@ -1,4 +1,7 @@
-body { background-color: rgba(0, 0, 0, 0.767);}
+body {
+    background-color: rgba(0, 0, 0, 0.767);
+    overflow-x: hidden;
+}
 
 .wrapper {
     max-width: 1200px;
